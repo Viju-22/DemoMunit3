@@ -36,8 +36,12 @@
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>4.3.0</muleVersion>
-						<username>${anypoint.userName}</username>
-						<password>${anypoint.password}</password>
+						
+						<connectedAppClientId>${connectedAppClientId}</connectedAppClientId>
+						<connectedAppClientSecret>${connectedAppClientSecret}</connectedAppClientSecret>
+						<connectedAppGrantType>client_credentials</connectedAppGrantType>
+						<businessGroup>capgemini\capgeminiChild1\grandChild1</businessGroup>
+
 						<applicationName>BuildMunitDemo1</applicationName>
 						<environment>Sandbox</environment>
 						<businessGroup>MuleSoft</businessGroup>
