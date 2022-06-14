@@ -33,7 +33,7 @@ pipeline
              
         stage('Deploy Application To Mulesoft'){
          steps{
-        bat 'mvn package deploy -DmuleDeploy -Danypoint.userName=OssomVictory5 -Danypoint.password=Capg@1999'
+        bat 'mvn package deploy -DmuleDeploy -DconnectedAppClientId=1b508c93ec364822a86822319b28d1a2 -DconnectedAppClientSecret=C35aCD1ACa1b4c33812810c15E7BbCC0'
         }
        
         }
